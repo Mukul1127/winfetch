@@ -188,7 +188,7 @@ func generateInfo(config Config, title xterm256.Color, info xterm256.Color, user
 			if err != nil {
 				log.Fatal(err)
 			}
-			if (bv >= "19041") {
+			if (bv >= "21995") {
 				v = `Windows 11` 
 			} else {
 				v = `Windows 10`
@@ -241,7 +241,7 @@ func generateInfo(config Config, title xterm256.Color, info xterm256.Color, user
 }
 
 func getOutboundIP() net.IP {
-	conn, err := net.Dial("udp", "8.8.8.8:80")
+	conn, err := net.Dial("udp", "1.1.1.1")
 	if err != nil {
 		log.Fatal(err)
 	}
