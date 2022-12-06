@@ -188,7 +188,7 @@ func generateInfo(config Config, title xterm256.Color, info xterm256.Color, user
 			if err != nil {
 				log.Fatal(err)
 			}
-			if (bv >= "21995") {
+			if (bv >= "21996") {
 				v = `Windows 11` 
 			} else {
 				v = `Windows 10`
