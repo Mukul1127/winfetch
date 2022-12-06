@@ -241,7 +241,7 @@ func generateInfo(config Config, title xterm256.Color, info xterm256.Color, user
 }
 
 func getOutboundIP() net.IP {
-	conn, err := net.Dial("udp", "1.1.1.1")
+	conn, err := net.Dial("udp", "1.1.1.1:53")
 	if err != nil {
 		log.Fatal(err)
 	}
